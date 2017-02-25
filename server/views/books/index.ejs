@@ -24,6 +24,7 @@ Web App name: COMP308-W2017-MIDTERM
               <thead>
                 <tr>
                   <th>Title</th>
+                  <th class="text-center">Description</th>
                   <th class="text-center">Price</th>
                   <th class="text-center">Author</th>
                   <th class="text-center">Genre</th>
@@ -36,6 +37,7 @@ Web App name: COMP308-W2017-MIDTERM
                 <% for (let count = 0; count < books.length; count++) { %> <!-- this is a loop for showing data from database -->
                 <tr>
                   <td><%= books[count].Title %></td>
+                  <td class="text-center">$<%= books[count].Description %></td>
                   <td class="text-center">$<%= books[count].Price %></td> <!-- the data will be retrieved based on the counter  -->
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>

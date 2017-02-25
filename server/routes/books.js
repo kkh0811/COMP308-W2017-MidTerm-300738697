@@ -60,6 +60,7 @@ router.get('/add',requireAuth, (req, res, next) => {
 router.post('/add',requireAuth, (req, res, next) => {
   book.create({ 
     "Title": req.body.title, // to bring data from textfield
+    "Description":req.body.description,
     "Price": req.body.price,
     "Author": req.body.author,
     "Genre": req.body.genre
@@ -99,6 +100,7 @@ router.post('/:id',requireAuth, (req, res, next) => {
     let books = new book({
       "_id": id,
       "Title": req.body.title, // to get data from textfield
+      "Description":req.body.description,
       "Price": req.body.price,
       "Author": req.body.author,
       "Genre": req.body.genre
