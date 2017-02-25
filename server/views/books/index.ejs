@@ -33,24 +33,20 @@ Web App name: COMP308-W2017-MIDTERM
                 </thead>
                 <tbody>
                 <!-- Template Row -->
-                <% for (let count = 0; count < books.length; count++) { %>
+                <% for (let count = 0; count < books.length; count++) { %> <!-- this is a loop for showing data from database -->
                 <tr>
                   <td><%= books[count].Title %></td>
-                  <td class="text-center">$<%= books[count].Price %></td>
+                  <td class="text-center">$<%= books[count].Price %></td> <!-- the data will be retrieved based on the counter  -->
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the EDIT BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <!-- added edit button here and modified the link to direct detail page based on Book id user clicked  -->
                     <a class="btn btn-primary" href="/books/<%= books[count]._id %>" role="button"><i class="fa fa-pencil-square-o"></i> Edit</a>
                   </td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the DELETE BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <!-- added delete button here and modified the link to direct detail page based on Book id user clicked  -->
                     <a class="btn btn-danger" href="/books/delete/<%= books[count]._id %>" role="button"><i class="fa fa-trash-o"></i> Delete</a>
                   </td>
                 </tr>
