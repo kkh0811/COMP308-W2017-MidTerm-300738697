@@ -1,3 +1,12 @@
+/*
+#######################################################################################
+The name of source file : index.js
+The information of author :  Giho Kim
+The student number: 300738697
+Web App name: COMP308-W2017-MIDTERM
+#######################################################################################
+*/
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();

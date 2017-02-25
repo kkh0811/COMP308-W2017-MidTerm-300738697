@@ -1,3 +1,12 @@
+/*
+#######################################################################################
+The name of source file : db.js
+The information of author :  Giho Kim
+The student number: 300738697
+Web App name: COMP308-W2017-MIDTERM
+#######################################################################################
+*/
+
 module.exports = {
   //local MongoDB deployment ->
   "URI": "mongodb://localhost/books308"
